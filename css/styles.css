@@ -631,7 +631,7 @@ img {
   transition: border var(--tra), box-shadow var(--tra);
 }
 
-.works-link:hover .works-card-container {
+.works-link:is(:hover, :focus) .works-card-container {
   border: 1px solid #f4f4fd;
   border-top: transparent;
 }
@@ -641,7 +641,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.works-link:hover .works-overlay-text {
+.works-link:is(:hover, :focus) .works-overlay-text {
   transform: translateY(0);
 }
 
@@ -729,4 +729,5 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   margin-left: auto;
+  cursor: pointer;
 }
