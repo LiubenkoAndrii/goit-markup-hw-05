@@ -29,7 +29,7 @@
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link">Studio</a>
+              <a href="./index.html" class="header-link link current">Studio</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Portfolio</a>
@@ -59,7 +59,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button class="hero-btn" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="benefits">
@@ -327,8 +329,8 @@
               <a href="" class="customers-icon link">
                 <svg class="customers-icon-pic" width="104" height="56">
                   <use
-                    href="./images/customers-logo.svg#icon-customers-logo1">
-                  </use>
+                    href="./images/customers-logo.svg#icon-customers-logo1"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -336,8 +338,8 @@
               <a href="" class="customers-icon link">
                 <svg class="customers-icon-pic" width="104" height="56">
                   <use
-                    href="./images/customers-logo.svg#icon-customers-logo2">
-                  </use>
+                    href="./images/customers-logo.svg#icon-customers-logo2"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -345,8 +347,8 @@
               <a href="" class="customers-icon link">
                 <svg class="customers-icon-pic" width="104" height="56">
                   <use
-                    href="./images/customers-logo.svg#icon-customers-logo3">
-                  </use>
+                    href="./images/customers-logo.svg#icon-customers-logo3"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -354,8 +356,8 @@
               <a href="" class="customers-icon link">
                 <svg class="customers-icon-pic" width="104" height="56">
                   <use
-                    href="./images/customers-logo.svg#icon-customers-logo4">
-                  </use>
+                    href="./images/customers-logo.svg#icon-customers-logo4"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -363,8 +365,8 @@
               <a href="" class="customers-icon link">
                 <svg class="customers-icon-pic" width="104" height="56">
                   <use
-                    href="./images/customers-logo.svg#icon-customers-logo5">
-                  </use>
+                    href="./images/customers-logo.svg#icon-customers-logo5"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -372,8 +374,8 @@
               <a href="" class="customers-icon link">
                 <svg class="customers-icon-pic" width="104" height="56">
                   <use
-                    href="./images/customers-logo.svg#icon-customers-logo6">
-                  </use>
+                    href="./images/customers-logo.svg#icon-customers-logo6"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -427,5 +429,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close type="button">
+          <svg class="modal-close-btn" width="8" height="8">
+            <use href="./images/close-modal.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
